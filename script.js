@@ -156,7 +156,7 @@ function criarProdutos() {
             window.location.href = local;
         }; 
         
-        btn.textContent = "Adicionar ao carrinho";
+        btn.textContent = "Ver Detalhes";
 
         let container = document.getElementsByClassName("container-itens")[0];
         if (container) {
