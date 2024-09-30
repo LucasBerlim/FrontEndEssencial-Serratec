@@ -146,7 +146,7 @@ nav ul li a:hover {
 }
 
 .item a input[type="number"] {
-    color: #7f7bfe;
+    color: #000000;
     margin-bottom: 1rem;
     border-radius: 5px;
     padding: 5px;
@@ -154,7 +154,7 @@ nav ul li a:hover {
 }
 
 .item a input[type="number"]::placeholder {
-    color: #7f7bfe; 
+    color: #000000; 
 }
 
 #quantidade {
