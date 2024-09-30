@@ -177,11 +177,12 @@ nav ul li a:hover {
 
 .detalhe {
     width: 60%;
-    background-color: white;
+    background-image: url(img/5594016.jpg);
 }
 
 .descricao {
-    font-size: 24px
+    font-size: 24px;
+    margin-bottom: 1rem;
 }
 
 /* DO MENU HAMBUERGUER */
