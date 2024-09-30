@@ -57,10 +57,7 @@ textarea {
     color: rgb(37, 37, 37);
 }
 
-.container-checkbox {
-    display: flex;
-    justify-content: left;
-}
+
 
 input:focus,
 textarea:focus {
@@ -83,5 +80,19 @@ legend {
     padding: 0.7em;
     font-size: 1.2em;
     border: none;
+}
+
+.container-checkbox {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 0.7rem 0 0;
+    
 }
 
