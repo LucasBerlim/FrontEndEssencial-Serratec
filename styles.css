@@ -29,8 +29,8 @@ header {
 
 
 .img-header {
-    width: 50px; /**/
-    margin-right: 1rem;
+    width: 40px; /**/
+    margin-right: 1rem; 
 }
 
 .titulo-header {
@@ -204,6 +204,14 @@ nav ul li a:hover {
     margin: 4px 0;
 }
 
+footer {
+    background-color: #919191;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
 
     header {
@@ -215,7 +223,9 @@ nav ul li a:hover {
     }
 
     .img-header {
-        display: none;
+        order: 1;
+        margin-right: 0;
+        margin-left: 1rem;     
     }
 
     .detalhe {
