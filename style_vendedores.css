@@ -1,9 +1,9 @@
 /*pagina vendedores*/
 
-body, html {
+/*body, html {
     height: 100%; 
     background-color: #afa6f4; 
-}
+}*/
 
 .container {
     display: flex;

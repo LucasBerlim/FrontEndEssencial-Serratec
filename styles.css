@@ -145,6 +145,23 @@ nav ul li a:hover {
     border: 1px solid #242424;
 }
 
+.item a input[type="number"] {
+    color: #000000;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+.item a input[type="number"]::placeholder {
+    color: #000000; 
+}
+
+#quantidade {
+    box-sizing: content-box;
+    width: 25%;
+}
+
 .item button:hover {
     background-color: #3d3d3d;
     color: white;
@@ -160,11 +177,12 @@ nav ul li a:hover {
 
 .detalhe {
     width: 60%;
-    background-color: white;
+    background-image: url(img/5594016.jpg);
 }
 
 .descricao {
-    font-size: 24px
+    font-size: 24px;
+    margin-bottom: 1rem;
 }
 
 /* DO MENU HAMBUERGUER */

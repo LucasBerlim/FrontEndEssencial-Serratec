@@ -142,6 +142,12 @@ function criarProdutos() {
         h2.textContent = p.titulo;
 
         let a = document.createElement("a");
+        let qnt = document.createElement("input");
+        qnt.type = "number";
+        qnt.id = "quantidade";
+        qnt.min = "1";
+        qnt.oninput="validity.valid||(value='');";
+        qnt.placeholder = "quantidade";
 
         let span = document.createElement("span");
         span.textContent = p.valor;
@@ -155,7 +161,7 @@ function criarProdutos() {
             window.location.href = local;
         }; 
         
-        btn.textContent = "Ver Detalhes";
+        btn.textContent = "Comprar";
 
         let container = document.getElementsByClassName("container-itens")[0];
         if (container) {
@@ -164,6 +170,7 @@ function criarProdutos() {
             item.appendChild(a);
             a.appendChild(h2);
             a.appendChild(span);
+            a.appendChild(qnt);
             a.appendChild(btn);
         } else {
             console.error("Elemento não encontrado.");
