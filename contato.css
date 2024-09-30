@@ -17,7 +17,7 @@ form {
     max-width: 35em;
     background: linear-gradient(90deg, #5fdaff 0%, #7f7bfe 100%);
     padding: 2rem;
-    margin: 0.5rem 2rem 2rem 2rem; /* cime, direita, baixo, esquerda*/
+    margin: 0.5rem 2rem 2rem 2rem; /* cima, direita, baixo, esquerda*/
     border-radius: 5px;
 }
 
