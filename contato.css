@@ -1,4 +1,4 @@
-body {
+/*body {
     background-image: url(img/5594016.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-}
+}*/
 
 form {
     width: 90%;
