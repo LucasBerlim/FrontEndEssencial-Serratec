@@ -11,7 +11,7 @@ body {
 .container {
     display: flex;
     justify-content: center; 
-    align-items: center;   
+    align-items: center;     
 }
 
 .titulo {
@@ -38,7 +38,12 @@ body {
     height: 280px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(182, 23, 235, 0.81);
-    background: linear-gradient(20deg, #5fdaff, #7f7bfe)
+    background: linear-gradient(20deg, #5fdaff, #7f7bfe);
+    transition: background 3s ease, transform .8s ease;
+}
+
+.vendedor:hover {
+    transform: scale(1.03);
 }
 
 .vendedor h2 {
