@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -52,26 +53,27 @@
         </nav>
     </header>
 
-    <form action="" autocomplete="off">
-            <legend>Formulário de contato</legend>
+    <form class="form-contato" action="envio_dados.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required placeholder="nome"><br><br>
 
-            <label for="name">Nome Completo</label>
-            <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
-        
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required placeholder="Digite um email válido">
-        
-            <label for="subject">Assunto</label>
-            <input type="text" name="subject" id="subject" required placeholder="Digite o assunto">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="email"><br><br>
 
-            <label for="message">Mensagem</label>
-            <textarea name="message" id="message" rows="7" required maxlength="1000" minlength="20" placeholder="Conte-nos tudo"></textarea>
-        
-            <label class="container-checkbox">
-                <input type="checkbox" name="checkbox" id="checkbox"> Quero receber informações de ofertas por e-mail.
-            </label>
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required placeholder="assunto"><br><br>
 
-            <button type="submit" class="btn"> Enviar </button>
+        <div>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required placeholder="mensagem"></textarea><br><br>
+        </div>
+
+        <div>
+            <input type="checkbox" id="aceito" name="aceito" value="sim" required>
+            <label for="aceito">Quero receber informações de ofertas por e-mail.</label>
+        </div>
+        
+        <button type="submit">Enviar</button>
     </form>
     <footer>
         <h1>&copy Z Store.com</h1>

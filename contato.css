@@ -1,103 +1,37 @@
-/*body {
-    background-image: url(img/5594016.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: "Rubik", sans-serif;
-    color: rgb(37, 37, 37);
+.form-contato {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-}*/
-
-body {
-    background-image: url(img/5594016.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
-form {
-    width: 90%;
-    min-width: 28.125em;
-    max-width: 35em;
+    flex-direction: column;
     background: linear-gradient(90deg, #5fdaff 0%, #7f7bfe 100%);
     padding: 2rem;
-    margin: 0.5rem 2rem 2rem 2rem; /* cima, direita, baixo, esquerda*/
+    width: fit-content;
+    margin: 2rem auto;
     border-radius: 5px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
-fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-textarea {
-    resize: none; 
-    width: 560px; 
-    height: 126px; 
-}
-
-label, 
-input,
-textarea {
-    display: block;
+.form-contato textarea {
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     width: 100%;
     box-sizing: border-box;
 }
 
-input::placeholder,
-textarea::placeholder {
-    color: rgba(0, 0, 0, 0.5);
+.form-contato input, 
+.form-contato textarea,
+.form-contato button {
+    border-radius: 5px;
 }
 
-input,
-textarea {
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 2px solid transparent;
-    border-bottom-color: #fff;
-    padding: 0.75em;
-    margin: 0.5em 0 2.5em;
-    font-size: 1em;
-    color: rgb(37, 37, 37);
+.form-contato button {
+    width: fit-content;
+    padding: 5px;
+    margin-top: 1rem;
 }
 
-input:focus,
-textarea:focus {
-    border-bottom: 2px solid #8e999a;
-    background-color: #fff;
+@media (max-width: 768px) {
+    .form-contato {
+        width: auto;
+        margin: 2rem 2rem;
+    }
 }
-
-legend {
-    padding: 0.5em;
-    text-align: center;
-    font-weight: bold;
-    color: rgb(37, 37, 37);
-    font-size: 1.3em;
-}
-
-.btn {
-    background-color: rgb(37, 37, 37);
-    color: white;
-    cursor: pointer;
-    padding: 0.7em;
-    font-size: 1.2em;
-    border: none;
-}
-
-.container-checkbox {
-    display: flex;
-    align-items: center;
-    padding-bottom: 2rem;
-}
-
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    margin: 0 0.7rem 0 0;
-    
-}
-
