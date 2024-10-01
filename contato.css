@@ -11,6 +11,13 @@
     overflow: hidden;
 }*/
 
+body {
+    background-image: url(img/5594016.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
 form {
     width: 90%;
     min-width: 28.125em;
@@ -56,8 +63,6 @@ textarea {
     font-size: 1em;
     color: rgb(37, 37, 37);
 }
-
-
 
 input:focus,
 textarea:focus {
