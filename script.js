@@ -110,6 +110,7 @@ function exibirProdutoPorId() {
 
         let btn = document.createElement("button");
         btn.className = "btn-item";
+        btn.onclick = adicionaListaLS;
         btn.textContent = "Adicionar ao carrinho";
 
         div.appendChild(item);
@@ -191,3 +192,24 @@ function toggleMenu() {
         menu.style.display = 'flex';
     }
 }
+
+// adicionando itens no local storage
+if (!localStorage.getItem('contadorItens')) {
+    localStorage.setItem('contadorItens', JSON.stringify(0));
+}
+
+function adicionaListaLS() {
+    let itens = JSON.parse(localStorage.getItem('contadorItens'));
+
+    itens += 1;
+
+    localStorage.setItem('contadorItens', JSON.stringify(itens));
+
+    document.getElementById('badge').textContent = itens;
+    console.log(itens);
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    let itens = JSON.parse(localStorage.getItem('contadorItens'));
+    document.getElementById('badge').textContent = itens;
+});
