@@ -4,7 +4,7 @@
     justify-content: space-around;
     background: linear-gradient(20deg, #5fdaff, #7f7bfe);
     padding: 2rem;
-    margin: 0.5rem 2rem 2rem 2rem; /* cime, direita, baixo, esquerda*/
+    margin: 4rem 2rem 2rem 2rem; /* cime, direita, baixo, esquerda*/
     border-radius: 5px;
 }
 
@@ -65,6 +65,10 @@
     width: fit-content;
     padding: 5px;
     margin-top: 1rem;
+}
+
+.form-contato button:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
